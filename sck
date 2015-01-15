@@ -1,0 +1,82 @@
+Eclipse:
+Ctrl + 2 为本地变量赋值
+
+Alt + Shift + R 重命名变量和函数  Alt + Shift + R + R 重命名类的属性（这种方式可以同步修改get和set方法）
+
+Shift + Enter 在当前行的下一行插入空行，并且光标切过去；Ctrl + Shift + Enter 在当前行的上一行插入空行
+
+F4 显示当前类的类型树
+
+Ctrl + Alt + H 显示当前函数的调用树
+
+Ctrl + W 关闭当前编辑器；Ctrl + Shift + W 关闭所有的编辑器
+
+Ctrl + UP/DOWN  光标不动，编辑器上下移动
+
+Ctrl + LEFT/RIGHT 光标左右按照单词跳动
+
+Ctrl + SHIFT + UP/DOWN 光标在上一个/下一个函数之间移动
+
+ALT + SHIF + Q 在各个视图之间切换
+
+ALT + SHIFT + W 展开视图列表
+
+ALT + SHIFT + D deubg调试选择(T:junit)
+
+ALT + SHIFT + Z 将选定的内容使用模板包围
+
+CTRL + / 单行注释
+
+CTRL + SHIFT + P 跳转到当前括弧的另一半去
+
+CTRL + SHIFt + L 显示快捷键列表
+
+CTRL +　D 删除当前行
+
+CTRL + DELETE 删除下一个字
+
+CTRL + BACKSPACE 删除前一个字
+
+CTRL + SHIFT + DELETE 删除到行尾
+
+F4 查看当前类的类型关系
+
+CTRL + T 快速查看指针指向类的类型关系
+
+CTRL + SHIFT + T 打开类型搜索框
+
+CTRL + SHIFT + M Add Import
+
+CTRL + F11 或者 ALT + SHIFT + X + J run as an application
+
+CTRL + /(数字键盘) 允许/禁止 折叠代码
+
+CTRL + SHIFT + /(数字键盘) 折叠当前类中所有代码
+
+CTRL + *(数字键盘) 铺开当前类中所有代码
+
+CTRL + SHIFT + E 视图管理
+
+CTRL + SHIFT + P 定位到当前字符的匹配的另外一半
+
+CTRL + K 参照当前选中的word，快速定位到下一个
+
+CTRL + SHIFT + X 将当前选中字符全部转化为大写
+
+CTRL + SHIFT + Y 将当前选中字符全部转化为小写
+
+CTRL + SHIFt + HOME 选中当前光标到文件开始
+
+CTRL + SHIFT + END 选中单签光标到文件结束
+
+
+CtrlP:
+Press <F5> to purge the cache for the current directory to get new files, remove deleted files and apply new ignore options.
+Press <c-f> and <c-b> to cycle between modes.
+Press <c-d> to switch to filename only search instead of full path.
+Press <c-r> to switch to regexp mode.
+Use <c-j>, <c-k> or the arrow keys to navigate the result list.
+Use <c-t> or <c-v>, <c-x> to open the selected entry in a new tab or in a new split.
+Use <c-n>, <c-p> to select the next/previous string in the prompt's history.
+Use <c-y> to create a new file and its parent directories.
+Use <c-z> to mark/unmark multiple files and <c-o> to open them.
