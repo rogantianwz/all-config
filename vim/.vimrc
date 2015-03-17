@@ -9,6 +9,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'elzr/vim-json'
 Plugin 'vim-scripts/AutoComplPop'
+Plugin 'vim-scripts/pythoncomplete'
 call vundle#end()
 syntax on
 filetype plugin indent on
@@ -44,3 +45,5 @@ let g:acp_completeoptPreview = 1 "AutoComplPop插件， 在补全处显示文档
 
 "默认是\
 let mapleader=','
+"将vim默认的蓝颜色的注释改成绿色
+highlight Comment ctermfg=green guifg=green

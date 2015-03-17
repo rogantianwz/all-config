@@ -20,7 +20,7 @@ alias ssh44='ssh mdev@192.168.242.44';
 alias sshrt='ssh root@rogantian.com'
 
 #创建一个目录并进入该目录里： mcd [目录名]
-mcd2() { mkdir -p "$1"; cd "$1"; }
+mcd() { mkdir -p "$1"; cd "$1"; }
 
 #进入一个目录并列出它的的内容：cls[目录名]
 cls() { cd "$1"; ls; }
