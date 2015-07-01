@@ -1,0 +1,149 @@
+stat
+sudo apt-get install python-pip
+sudo pip install PyQuery
+pip --version
+full stack engineer
+"a
+"ayy
+"ap
+vim /etc/ppp/chap-secrets
+crontab---> m h dom mon dow 分时日月周
+useradd -M -U -s/usr/sbin/nologin ftp
+/bin/false /bin/true 
+/etc/passwd /etc/group 
+pam_shells /etc/shells 
+hostname
+nslookup ip -->根据ip查询主机名
+apt-get update 更新源列表，通常在更改源之后以及upgrade之前执行
+apt-get install 
+apt-get install package --reinstall 重新安装包
+apt-get -f install package 修复安装 -f=--fix-missing
+apt-get upgrade 更新系统中的包，如果有依赖更新则拒绝
+apt-get dist-upgrade 更新系统中的包，只能解决依赖问题
+/etc/apt/sources.list 
+apt-get remove 移除包，同时移除没用的依赖,保留配置
+apt-get purge 移除包，同时移除配置文件
+apt-cache search package 搜索包，默认搜索名称和描述，可以使用--names-only来只搜名称
+apt-cache depends package 了解使用依赖
+apt-cache rdepends package 查看该包被哪些包依赖
+dpkg -l | grep packagename 可以查看本地是否安装了该package dpkg-->package manager for Debian
+
+sudo apt-get install ruby
+ruby -v
+gem -v
+gem source -l
+gem source -a http://ruby.taobao.org
+sudo apt-get install ruby-dev
+sudo gem install jekyll
+sudo gem install execjs
+sudo gem install therubyracer
+gem list
+
+svn info
+
+页面防抓取
+1. 把HTML代码用URLEncode加码，然后在前端使用document.write(decodeURI("......"));
+2. 类似http://www.bankrate.com.cn/creditcard/1310一样把关键字处理成图片
+
+git show commitid
+
+git cherry-pick commitid
+
+#清空文件
+echo /dev/null > filname 
+
+#vim
+% 跳转到当前括号匹配的另一个括号,包括(){},如果当前没在括号上则跳到第一个遇到的结束括号
+di[标记] 删除标记内部的内容,可以有{},"",()等
+dt[标记] 删除光标和标记之间的内容(保持标记不动)
+
+#vim替换命令 :ranges/pat1/pat2/g --> range是命令执行范围的指定,可以用百分号(%)表示所有行,使用点(.)表示当前行,使用美元
+符号($)表示最后一行.还可以使用行号,例如10,20表示第10行到第20行, .,$表示当前航到最后一行, .+2,$-5表示当前行后两行知道全
+文的倒数第五行,等等.
+g是可选标志,表示涕黄将针对行中每个匹配的串,如果没有则表示只替换行中第一个匹配.
+:.,+3s/^/#/g 注释从当前行起的后四行
+:%s/^/#/g 在全部内容的行首添加#号注释
+
+#vim多行注释
+1. 使用替换命令
+2. ctrl+v进入可视化模式,移动光标选中多行的开头,按大写I进入插入模式,输入#,然后ESC,之后所有选中的行开头都添加了#号,多行删除注释同理,只是使用d即可
+
+#vim缩进
+1. 单行的时候可以连按两次<或者>进行向左或向右缩进
+2. 单行的时候还可以使用==命令,会根据语言特征自动缩进排版
+3. 多行的时候可以使用n==, 使用gg=G可以对整篇代码进行缩进
+
+#查看某个文件的硬链接都指向了哪些路径
+ll -i filename # 查出这个文件的inode
+find -inum inode #用查出来的inode为参数使用find命令查找即可
+
+#fc命令使用
+fc -rnl 逆序列出历史命令,并且不显示编号
+
+#strings命令再对象文件或者二进制文件中查找可打印的字符串
+strings /dev/urandom
+
+#python查看内建函数
+dir()
+help()
+
+#vim
+#打开历史命令记录
+q:
+#查看当前编辑的文件名,同理的还有pwd,cd等
+file
+#当打开了多个文件时,使用bn跳到下一个文件,bp到上一个文件
+
+#vim 分屏命令
+http://coolshell.cn/articles/1679.html
+
+#unzip 
+unzip -l product.zip #-l inputfile.zip 列出inputfile.zip中的所有文件
+unzip -c product.zip app/static/gongzhang.html # -c 将inputfile.zip 中的某个文件输出到stdout中区,并且打印文件名, 同 -p ,只是-p不打印文件名.猜测c是console的意思,p是print的意思-_-
+
+#dig
+dig post.rogantian.com +nostats +nocomments +nocmd
+
+
+#tmux [参考](http://www.cnblogs.com/scue/p/3705309.html)
+tmux ls #列出tmux会话列表
+tmux attach -t session #进入指定的会话(可多终端共享)
+tmux kill-session -t session #删除指定会话
+, #重命名窗口
+s #切换session
+d #detach session
+
+#uname 查看系统信息
+uname -a
+
+#fortune http://bluereader.org/article/30146899
+fortune
+
+1.本科及以上学历，3年以上互联网工作经验； 
+2.熟悉C/C++，有大型系统开发经验； 
+3.精通gcc、gdb、svn、git等开发和代码维护工具的使用，有良好的编码规范，能够编写清晰的开发文档； 
+4.精通STL、Boost等基础开发库，研究过至少一个开源项目源码； 
+5.熟练基于异步和同步的网络开发，及多线程开发和调试； 
+6.精通至少一种脚本开发语言，如perl/php/python/ruby等； 
+7.熟练使用基本Linux系统命令，及awk/sed等文本分析工具； 
+8.对数据结构和算法设计有较深刻的理解； 
+9.设计或作为核心人员开发过大访问量的在线server系统； 
+10.有热情，有责任心，逻辑思维能力好，有创新精神。
+
+#socket
+sockaddr_in ##net/netinet/in.h Structure describing an Internet socket address
+sockaddr ##bits/socket.h       Structure describing a generic socket address , same as sockaddr_in with the same length
+in_addr ##net/netinet/in.h  Internet address
+extern int socket (int __domain, int __type, int __protocol) __THROW; ##socket/sys/socket.h
+extern int bind (int __fd, __CONST_SOCKADDR_ARG __addr, socklen_t __len) __THROW; ##socket/sys/socket.h
+# define __CONST_SOCKADDR_ARG   const struct sockaddr * ##socket/sys/socket.h
+extern int listen (int __fd, int __n) __THROWa; ##socket/sys/socket.h
+extern int accept (int __fd, __SOCKADDR_ARG __addr,socklen_t *__restrict __addr_len); ##socket/sys/socket.h
+# define __SOCKADDR_ARG     struct sockaddr *__restrict ##socket/sys/socket.h
+typedef __socklen_t socklen_t; ##bits/socket.h
+# define __STD_TYPE     __extension__ typedef ##bits/types.h
+#define __U32_TYPE      unsigned int ##bits/types.h
+__STD_TYPE __U32_TYPE __socklen_t; ##bits/types.h
+
+#tr [OPTION]... SET1 [SET2]
+ps -ef | grep [t]omcat | tr -s " " | cut -d" " -f 2 | xargs kill -9          #tr -s " " 可以将行中的连续多个空格替换成一个空格
