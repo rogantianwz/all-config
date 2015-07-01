@@ -1,0 +1,16 @@
+[user]
+	name = rogantian
+	email = rogantian@sohu-inc.com
+[color]
+	ui = true
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+	pl = pull
+	ps = push
+[core]
+	editor = vim
+[push]
+	default = simple
