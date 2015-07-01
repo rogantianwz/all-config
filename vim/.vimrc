@@ -26,7 +26,9 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 "CTRLP配置
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = 'target'
-:map <space> :CtrlPMRU <cr>
+":map <space> :CtrlPMRU <cr>
+:map <space> :CtrlP <cr>
+let g:ctrlp_by_filename = 1
 
 "设置自动补全
 ""set wildmenu

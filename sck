@@ -80,3 +80,23 @@ Use <c-t> or <c-v>, <c-x> to open the selected entry in a new tab or in a new sp
 Use <c-n>, <c-p> to select the next/previous string in the prompt's history.
 Use <c-y> to create a new file and its parent directories.
 Use <c-z> to mark/unmark multiple files and <c-o> to open them.
+
+
+NERDTree:
+ctrl + w + w 在左右窗格之间移动
+
+Intellij Idea
+ctrl + F12 查看当前文件的函数
+ctrl + / 单行注释
+ctrl + shift + / 多行注释
+ctrl + alt + v 自动导入变量定义
+ctrl + f 查找
+ctrl + r 替换
+ctrl + shift + f10 run test
+alt + home 聚焦导航条
+alt + insert 弹出generator对话框
+shift + f6 rename
+f2 跳到下一个高亮显示的错误之处
+shift + f2 跳到上一个高亮显示的错误之处
+ctrl + shift + f 全局搜索
+ctrl + q 查看类或方法的说
