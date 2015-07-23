@@ -39,7 +39,9 @@ sudo gem install execjs
 sudo gem install therubyracer
 gem list
 
+#svn
 svn info
+svn revert -r xxx.xml  ##svn add命令取消
 
 页面防抓取
 1. 把HTML代码用URLEncode加码，然后在前端使用document.write(decodeURI("......"));
@@ -147,3 +149,35 @@ __STD_TYPE __U32_TYPE __socklen_t; ##bits/types.h
 
 #tr [OPTION]... SET1 [SET2]
 ps -ef | grep [t]omcat | tr -s " " | cut -d" " -f 2 | xargs kill -9          #tr -s " " 可以将行中的连续多个空格替换成一个空格
+
+
+
+#my nginx:
+Docroot is: /usr/local/var/www
+
+The default port has been set in /usr/local/etc/nginx/nginx.conf to 8080 so that
+nginx can run without sudo.
+
+nginx will load all files in /usr/local/etc/nginx/servers/.
+
+
+To have launchd start nginx at login:
+    ln -sfv /usr/local/opt/nginx/*.plist ~/Library/LaunchAgents
+Then to load nginx now:
+    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
+Or, if you don't want/need launchctl, you can just run:
+    nginx
+默认日志地址:/usr/local/var/log/nginx
+#tmux:
+==> Pouring tmux-2.0.yosemite.bottle.1.tar.gz
+==> Caveats
+Example configurations have been installed to:
+  /usr/local/Cellar/tmux/2.0/share/tmux/examples
+
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> Summary
+🍺  /usr/local/Cellar/tmux/2.0: 16 files, 656K
+
+

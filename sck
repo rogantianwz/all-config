@@ -100,3 +100,33 @@ f2 跳到下一个高亮显示的错误之处
 shift + f2 跳到上一个高亮显示的错误之处
 ctrl + shift + f 全局搜索
 ctrl + q 查看类或方法的说
+
+Intellij Idea in OS X
+F4: Jump to Source
+Cmd + F12: File Structure
+Cmd + w: 选中光标所在所在的字
+Ctrl + j: Quick Documentation
+Cmd + g: Go to Line
+Ctrl + n: 弹出generator对话框
+Cmd + j: live template
+Alt + Enter:调出IDEA对出错点的提示方法
+Cmd + d: 复制当前行到下一行
+Cmd + Shift + v: 调出IDEA寄存器中保存的最近复制的一些内容
+Cmd + /: 注释/取消注释
+Cmd + Shift + Enter: 补全当前行
+Cmd + o: override方法
+Cmd + i: implement方法
+
+Shift + F6: 重命名
+Cmd + F6: 修改方法签名
+Cmd + p: 查询某方法的参数信息
+Cmd + b: 跳到调用方法定义处
+Cmd + option + b: 跳到方法的实现处
+Cmd + u: 跳到方法在父类或接口的定义处
+Ctrl + shift + f:全文搜
+
+
+
+OSX:
+Cmd + m: 最小化窗口
+Ctrl + Space:打开spotlight
