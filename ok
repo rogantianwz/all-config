@@ -180,4 +180,32 @@ Bash completion has been installed to:
 ==> Summary
 🍺  /usr/local/Cellar/tmux/2.0: 16 files, 656K
 
+#mysql
+downlaod url: http://dev.mysql.com/downloads/file.php?id=457712
+安装后地址为:/usr/local/mysql/bin
+安装完成之后root用户的默认密码为为空, 修改密码的话执行bin下的命令: /usr/local/mysql/bin/mysqladmin -u root password xxxx 将xxxx设为新密码
+将mysql的安装路径添加到环境变量中
+---------
+TODO: mac jdk src.jar
+--------
 
+#redis
+To have launchd start redis at login:
+    ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
+Then to load redis now:
+    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+Or, if you don't want/need launchctl, you can just run:
+    redis-server /usr/local/etc/redis.conf
+
+WARNING: launchctl will fail when run under tmux.
+==> Summary
+🍺  /usr/local/Cellar/redis/3.0.2: 9 files, 892K
+########
+ooooooooooooooooooooo
+mysql:
+cd /usr/local/mysql/bin/
+sudo ./mysqld --user=root
+mysql -uroot -p
+redis:
+redis-server /usr/local/etc/redis.conf
+ooooooooooooooooooooo
