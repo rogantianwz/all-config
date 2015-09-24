@@ -7,7 +7,7 @@ alias ll='ls -alF'
 alias la='ls -A' #do not list implied ./ and ../
 alias l='ls -CF'
 
-CATALINA_HOME='/opt/tomcat';
+CATALINA_HOME='/opt/tomcat/apache-tomcat-7.0.32';
 alias tmstart='$CATALINA_HOME/bin/startup.sh';
 alias tmstartdebug='$CATALINA_HOME/bin/catalina.sh jpda start';
 alias tmstop='$CATALINA_HOME/bin/shutdown.sh 2 -force';  
@@ -17,10 +17,10 @@ alias kt='ps -ef | grep [t]omcat | tr -s " " | cut -d " " -f2 | xargs kill -9';
  
 alias sck='vim $HOME/sck';
 alias ok='vim $HOME/ok';
-alias ssh44='ssh mdev@192.168.242.44';
+#alias ssh44='ssh mdev@192.168.242.44';
 alias sshrt='ssh root@rogantian.com'
 
-alias scelog='~/workspace/scelog/scelog.py'
+#alias scelog='~/workspace/scelog/scelog.py'
 
 #创建一个目录并进入该目录里： mcd [目录名]
 mcd() { mkdir -p "$1"; cd "$1"; }
